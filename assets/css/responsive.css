@@ -1,0 +1,266 @@
+/* ============================================
+   RESPONSIVE STYLES
+   Mobile-first responsive breakpoints
+   ============================================ */
+
+/* ========== TABLET (768px and below) ========== */
+@media (max-width: 768px) {
+    :root {
+        --section-padding: 60px 20px;
+    }
+
+    /* Header */
+    .nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(11, 11, 15, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition-smooth);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .btn-primary {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Hero */
+    .hero {
+        height: 80vh;
+        margin-top: 70px;
+    }
+
+    /* Grids */
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Carousel */
+    .carousel-item {
+        flex: 0 0 250px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Newsletter */
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-input {
+        width: 100%;
+    }
+
+    /* Masonry */
+    .masonry-grid {
+        column-count: 2;
+        column-gap: 1rem;
+    }
+
+    /* Timeline */
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        text-align: left !important;
+        padding-left: 3rem;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: 11px;
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 1.5rem;
+    }
+
+    /* Search Bar */
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    /* Filter Bar */
+    .filter-bar {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .filter-btn {
+        flex-shrink: 0;
+    }
+}
+
+/* ========== MOBILE (480px and below) ========== */
+@media (max-width: 480px) {
+    :root {
+        --section-padding: 40px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Header */
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .header-content {
+        padding: 1rem 15px;
+    }
+
+    /* Hero */
+    .hero {
+        height: 70vh;
+    }
+
+    .btn-hero {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    /* Cards */
+    .card {
+        padding: 1.5rem;
+    }
+
+    .event-card-content {
+        padding: 1rem;
+    }
+
+    /* Carousel */
+    .carousel-item {
+        flex: 0 0 200px;
+    }
+
+    /* Artist Cards */
+    .artist-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Masonry */
+    .masonry-grid {
+        column-count: 1;
+    }
+
+    /* Buttons */
+    .btn-back-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.2rem;
+    }
+
+    /* Forms */
+    .form-input,
+    .form-textarea,
+    .form-select {
+        padding: 0.8rem 1rem;
+    }
+
+    /* Pricing Table */
+    .pricing-table {
+        font-size: 0.9rem;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 1rem 0.5rem;
+    }
+
+    /* Seat Map */
+    .seat {
+        width: 30px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+
+    /* Contact Split Layout */
+    .contact-split {
+        flex-direction: column;
+    }
+
+    /* Error 404 */
+    .error-404 {
+        font-size: 6rem;
+    }
+}
+
+/* ========== LARGE DESKTOP (1400px and above) ========== */
+@media (min-width: 1400px) {
+    :root {
+        --container-max-width: 1400px;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ========== LANDSCAPE MOBILE ========== */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+        margin-top: 70px;
+    }
+}
+
+/* ========== PRINT STYLES ========== */
+@media print {
+    .header,
+    .footer,
+    .btn-back-top,
+    .mobile-menu-toggle {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+}
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Purchase tickets for your favorite events. Select ticket type, quantity, and seats.">
+    <title>Buy Tickets - EventX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="page-loader">
+        <div class="vinyl-loader"></div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">SoundWave</a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <a href="events.html" class="btn-primary">Buy Tickets</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="section" style="margin-top: 100px;">
+        <div class="container">
+            <h1 class="text-center fade-in">Purchase Tickets</h1>
+            <p class="text-center fade-in mb-3">Summer Music Festival - June 15, 2025</p>
+            
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; margin-top: 3rem;">
+                <div>
+                    <div class="card fade-in">
+                        <h2>Select Ticket Type</h2>
+                        <div class="form-group">
+                            <label class="form-label">Ticket Type</label>
+                            <select class="form-select" id="ticket-type">
+                                <option value="regular">Regular - $89</option>
+                                <option value="vip">VIP - $199</option>
+                                <option value="backstage">Backstage Pass - $399</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Quantity</label>
+                            <input type="number" class="form-input" id="quantity" min="1" max="10" value="1">
+                        </div>
+                    </div>
+
+                    <div class="card fade-in" style="margin-top: 2rem;">
+                        <h2>Select Seats (Optional)</h2>
+                        <div class="seat-map">
+                            <div style="text-align: center; margin-bottom: 1rem;">
+                                <span style="background: rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 5px; margin: 0 0.5rem;">Available</span>
+                                <span style="background: #a855f7; padding: 0.5rem 1rem; border-radius: 5px; margin: 0 0.5rem;">Selected</span>
+                                <span style="background: rgba(255,0,0,0.3); padding: 0.5rem 1rem; border-radius: 5px; margin: 0 0.5rem;">Occupied</span>
+                            </div>
+                            <div class="seat-row">
+                                <div class="seat">A1</div>
+                                <div class="seat">A2</div>
+                                <div class="seat">A3</div>
+                                <div class="seat">A4</div>
+                                <div class="seat">A5</div>
+                                <div class="seat occupied">A6</div>
+                                <div class="seat">A7</div>
+                                <div class="seat">A8</div>
+                            </div>
+                            <div class="seat-row">
+                                <div class="seat">B1</div>
+                                <div class="seat">B2</div>
+                                <div class="seat occupied">B3</div>
+                                <div class="seat">B4</div>
+                                <div class="seat">B5</div>
+                                <div class="seat">B6</div>
+                                <div class="seat">B7</div>
+                                <div class="seat">B8</div>
+                            </div>
+                            <div class="seat-row">
+                                <div class="seat">C1</div>
+                                <div class="seat">C2</div>
+                                <div class="seat">C3</div>
+                                <div class="seat">C4</div>
+                                <div class="seat">C5</div>
+                                <div class="seat">C6</div>
+                                <div class="seat occupied">C7</div>
+                                <div class="seat">C8</div>
+                            </div>
+                        </div>
+                        <div class="seat-summary" style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 10px;">
+                            <p>Selected Seats: 0</p>
+                            <p>Price per Seat: $89</p>
+                            <p class="total" style="font-size: 1.2rem; font-weight: 600; color: var(--accent-blue);">Total: $0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="position: sticky; top: 100px;">
+                        <h3>Order Summary</h3>
+                        <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 1rem 0;">
+                        <div style="margin-bottom: 1rem;">
+                            <p><strong>Event:</strong> Summer Music Festival</p>
+                            <p><strong>Date:</strong> June 15, 2025</p>
+                            <p><strong>Location:</strong> New York, NY</p>
+                        </div>
+                        <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 1rem 0;">
+                        <div id="summary-details" style="margin-bottom: 1rem;">
+                            <p>Ticket Type: <span id="summary-type">Regular</span></p>
+                            <p>Quantity: <span id="summary-quantity">1</span></p>
+                            <p>Price per Ticket: $<span id="summary-price">89</span></p>
+                        </div>
+                        <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 1rem 0;">
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-blue); margin-top: 1rem;">
+                            Total: $<span id="summary-total">89</span>
+                        </div>
+                        <a href="#" class="btn-hero" style="width: 100%; text-align: center; margin-top: 2rem; display: block;">Proceed to Payment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SoundWave</h3>
+                <p>Your ultimate destination for event tickets.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+                    <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe for updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EventX. All rights reserved. | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a></p>
+        </div>
+    </footer>
+
+    <button class="btn-back-top" aria-label="Back to top">↑</button>
+
+    <script>
+        // Update summary when ticket type or quantity changes
+        document.getElementById('ticket-type').addEventListener('change', updateSummary);
+        document.getElementById('quantity').addEventListener('change', updateSummary);
+
+        function updateSummary() {
+            const ticketType = document.getElementById('ticket-type').value;
+            const quantity = parseInt(document.getElementById('quantity').value) || 1;
+            
+            const prices = {
+                regular: 89,
+                vip: 199,
+                backstage: 399
+            };
+            
+            const names = {
+                regular: 'Regular',
+                vip: 'VIP',
+                backstage: 'Backstage Pass'
+            };
+            
+            const price = prices[ticketType];
+            const total = price * quantity;
+            
+            document.getElementById('summary-type').textContent = names[ticketType];
+            document.getElementById('summary-quantity').textContent = quantity;
+            document.getElementById('summary-price').textContent = price;
+            document.getElementById('summary-total').textContent = total;
+        }
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>
+

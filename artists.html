@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse all artists and performers. View their profiles and upcoming shows.">
+    <title>Artists - EventX | Browse All Artists</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="page-loader">
+        <div class="vinyl-loader"></div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">SoundWave</a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <a href="events.html" class="btn-primary">Buy Tickets</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 50vh; margin-top: 70px;">
+        <div class="hero-background"></div>
+        <div class="hero-content fade-in">
+            <h1>Our Artists</h1>
+            <p>Discover talented performers and musicians</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="artist-card fade-in" data-modal="artist-modal-1">
+                    <div class="artist-image">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300" alt="Taylor Swift">
+                    </div>
+                    <div class="artist-name">Taylor Swift</div>
+                </div>
+                <div class="artist-card fade-in" data-modal="artist-modal-2">
+                    <div class="artist-image">
+                        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=300" alt="The Weeknd">
+                    </div>
+                    <div class="artist-name">The Weeknd</div>
+                </div>
+                <div class="artist-card fade-in" data-modal="artist-modal-3">
+                    <div class="artist-image">
+                        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=300" alt="Billie Eilish">
+                    </div>
+                    <div class="artist-name">Billie Eilish</div>
+                </div>
+                <div class="artist-card fade-in" data-modal="artist-modal-4">
+                    <div class="artist-image">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300" alt="Ed Sheeran">
+                    </div>
+                    <div class="artist-name">Ed Sheeran</div>
+                </div>
+                <div class="artist-card fade-in" data-modal="artist-modal-5">
+                    <div class="artist-image">
+                        <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=300" alt="Ariana Grande">
+                    </div>
+                    <div class="artist-name">Ariana Grande</div>
+                </div>
+                <div class="artist-card fade-in" data-modal="artist-modal-6">
+                    <div class="artist-image">
+                        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=300" alt="Drake">
+                    </div>
+                    <div class="artist-name">Drake</div>
+                </div>
+                <div class="artist-card fade-in" data-modal="artist-modal-7">
+                    <div class="artist-image">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300" alt="Adele">
+                    </div>
+                    <div class="artist-name">Adele</div>
+                </div>
+                <div class="artist-card fade-in" data-modal="artist-modal-8">
+                    <div class="artist-image">
+                        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=300" alt="Post Malone">
+                    </div>
+                    <div class="artist-name">Post Malone</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SoundWave</h3>
+                <p>Your ultimate destination for event tickets.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+                    <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe for updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EventX. All rights reserved. | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a></p>
+        </div>
+    </footer>
+
+    <button class="btn-back-top" aria-label="Back to top">↑</button>
+
+    <!-- Artist Modals -->
+    <div class="modal" id="artist-modal-1">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Taylor Swift</h2>
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600" alt="Taylor Swift" style="width: 100%; border-radius: 15px; margin: 1rem 0;">
+            <p>Taylor Swift is an American singer-songwriter known for her narrative songwriting, which often centers around her personal life, and has received widespread critical praise and media coverage.</p>
+            <h3>Upcoming Shows</h3>
+            <ul>
+                <li>June 15, 2025 - New York, NY</li>
+                <li>July 20, 2025 - Los Angeles, CA</li>
+                <li>August 5, 2025 - Chicago, IL</li>
+            </ul>
+            <a href="events.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">View All Events</a>
+        </div>
+    </div>
+
+    <div class="modal" id="artist-modal-2">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>The Weeknd</h2>
+            <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600" alt="The Weeknd" style="width: 100%; border-radius: 15px; margin: 1rem 0;">
+            <p>The Weeknd is a Canadian singer, songwriter, and record producer known for his dark, atmospheric R&B style and distinctive falsetto vocals.</p>
+            <h3>Upcoming Shows</h3>
+            <ul>
+                <li>July 10, 2025 - Toronto, ON</li>
+                <li>August 15, 2025 - Miami, FL</li>
+            </ul>
+            <a href="events.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">View All Events</a>
+        </div>
+    </div>
+
+    <div class="modal" id="artist-modal-3">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Billie Eilish</h2>
+            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600" alt="Billie Eilish" style="width: 100%; border-radius: 15px; margin: 1rem 0;">
+            <p>Billie Eilish is an American singer-songwriter known for her unique musical style and distinctive voice. She has won multiple Grammy Awards.</p>
+            <h3>Upcoming Shows</h3>
+            <ul>
+                <li>September 1, 2025 - San Francisco, CA</li>
+                <li>October 5, 2025 - Seattle, WA</li>
+            </ul>
+            <a href="events.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">View All Events</a>
+        </div>
+    </div>
+
+    <div class="modal" id="artist-modal-4">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Ed Sheeran</h2>
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600" alt="Ed Sheeran" style="width: 100%; border-radius: 15px; margin: 1rem 0;">
+            <p>Ed Sheeran is an English singer-songwriter known for his acoustic folk-pop style and heartfelt lyrics.</p>
+            <h3>Upcoming Shows</h3>
+            <ul>
+                <li>June 30, 2025 - London, UK</li>
+                <li>July 25, 2025 - Dublin, Ireland</li>
+            </ul>
+            <a href="events.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">View All Events</a>
+        </div>
+    </div>
+
+    <div class="modal" id="artist-modal-5">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Ariana Grande</h2>
+            <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=600" alt="Ariana Grande" style="width: 100%; border-radius: 15px; margin: 1rem 0;">
+            <p>Ariana Grande is an American singer, songwriter, and actress known for her wide vocal range and pop music style.</p>
+            <h3>Upcoming Shows</h3>
+            <ul>
+                <li>August 10, 2025 - Las Vegas, NV</li>
+                <li>September 20, 2025 - Los Angeles, CA</li>
+            </ul>
+            <a href="events.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">View All Events</a>
+        </div>
+    </div>
+
+    <div class="modal" id="artist-modal-6">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Drake</h2>
+            <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=600" alt="Drake" style="width: 100%; border-radius: 15px; margin: 1rem 0;">
+            <p>Drake is a Canadian rapper, singer, and songwriter known for his emotional and introspective lyrics.</p>
+            <h3>Upcoming Shows</h3>
+            <ul>
+                <li>July 5, 2025 - Toronto, ON</li>
+                <li>August 12, 2025 - New York, NY</li>
+            </ul>
+            <a href="events.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">View All Events</a>
+        </div>
+    </div>
+
+    <div class="modal" id="artist-modal-7">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Adele</h2>
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600" alt="Adele" style="width: 100%; border-radius: 15px; margin: 1rem 0;">
+            <p>Adele is an English singer-songwriter known for her powerful vocals and soulful ballads.</p>
+            <h3>Upcoming Shows</h3>
+            <ul>
+                <li>October 1, 2025 - London, UK</li>
+                <li>November 5, 2025 - New York, NY</li>
+            </ul>
+            <a href="events.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">View All Events</a>
+        </div>
+    </div>
+
+    <div class="modal" id="artist-modal-8">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Post Malone</h2>
+            <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600" alt="Post Malone" style="width: 100%; border-radius: 15px; margin: 1rem 0;">
+            <p>Post Malone is an American rapper, singer, and songwriter known for blending genres and his unique musical style.</p>
+            <h3>Upcoming Shows</h3>
+            <ul>
+                <li>September 15, 2025 - Austin, TX</li>
+                <li>October 10, 2025 - Phoenix, AZ</li>
+            </ul>
+            <a href="events.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">View All Events</a>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>
+

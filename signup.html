@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create a SoundWave account to access exclusive deals and manage your tickets.">
+    <title>Sign Up - EventX | Create Your Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="page-loader">
+        <div class="vinyl-loader"></div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">SoundWave</a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <a href="events.html" class="btn-primary">Buy Tickets</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="section" style="min-height: calc(100vh - 200px); display: flex; align-items: center; margin-top: 100px;">
+        <div class="container">
+            <div style="max-width: 500px; margin: 0 auto;">
+                <div class="card fade-in">
+                    <h2 class="text-center" style="margin-bottom: 2rem;">Create Account</h2>
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" class="form-input" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" class="form-input" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="password">Password</label>
+                            <input type="password" class="form-input" id="password" name="password" required placeholder="Create a strong password">
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Must be at least 8 characters</p>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="confirm-password">Confirm Password</label>
+                            <input type="password" class="form-input" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: flex; align-items: flex-start; gap: 0.5rem; color: var(--text-secondary); font-size: 0.9rem;">
+                                <input type="checkbox" required style="width: 18px; height: 18px; margin-top: 0.2rem; flex-shrink: 0;">
+                                <span>I agree to the <a href="terms.html" style="color: var(--accent-blue);">Terms & Conditions</a> and <a href="privacy.html" style="color: var(--accent-blue);">Privacy Policy</a></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%; padding: 1rem;">Create Account</button>
+                    </form>
+                    <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem;">Already have an account?</p>
+                        <a href="login.html" class="btn-primary" style="display: inline-block; background: transparent; border: 1px solid var(--accent-blue);">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SoundWave</h3>
+                <p>Your ultimate destination for event tickets.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+                    <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe for updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EventX. All rights reserved. | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a></p>
+        </div>
+    </footer>
+
+    <button class="btn-back-top" aria-label="Back to top">↑</button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>
+

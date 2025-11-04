@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse all upcoming events, concerts, and festivals. Find and book tickets for your favorite shows.">
+    <title>Events - EventX | Browse All Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="page-loader">
+        <div class="vinyl-loader"></div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">SoundWave</a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <a href="events.html" class="btn-primary">Buy Tickets</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 60vh; margin-top: 70px;">
+        <div class="hero-background"></div>
+        <div class="hero-content fade-in">
+            <h1>All Events</h1>
+            <p>Discover amazing concerts, festivals, and live performances</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search events by name, artist, or location...">
+                <select class="form-select" style="max-width: 200px;">
+                    <option>All Cities</option>
+                    <option>New York</option>
+                    <option>Los Angeles</option>
+                    <option>Chicago</option>
+                    <option>Miami</option>
+                </select>
+                <select class="form-select" style="max-width: 200px;">
+                    <option>All Genres</option>
+                    <option>Rock</option>
+                    <option>Pop</option>
+                    <option>Jazz</option>
+                    <option>EDM</option>
+                    <option>Hip Hop</option>
+                </select>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="concerts">Concerts</button>
+                <button class="filter-btn" data-filter="festivals">Festivals</button>
+                <button class="filter-btn" data-filter="theatre">Theatre</button>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="event-card fade-in filter-item search-item" data-category="festivals">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800" alt="Summer Music Festival">
+                    <div class="event-card-content">
+                        <h3>Summer Music Festival</h3>
+                        <div class="meta">
+                            <span>📅 June 15, 2025</span>
+                            <span>📍 New York, NY</span>
+                        </div>
+                        <div class="price">$89</div>
+                        <a href="event.html" class="btn">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="event-card fade-in filter-item search-item" data-category="concerts">
+                    <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800" alt="Rock Concert">
+                    <div class="event-card-content">
+                        <h3>Rock Legends Live</h3>
+                        <div class="meta">
+                            <span>📅 July 20, 2025</span>
+                            <span>📍 Los Angeles, CA</span>
+                        </div>
+                        <div class="price">$125</div>
+                        <a href="event.html" class="btn">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="event-card fade-in filter-item search-item" data-category="theatre">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800" alt="Jazz Night">
+                    <div class="event-card-content">
+                        <h3>Jazz Night Under the Stars</h3>
+                        <div class="meta">
+                            <span>📅 August 5, 2025</span>
+                            <span>📍 Chicago, IL</span>
+                        </div>
+                        <div class="price">$65</div>
+                        <a href="event.html" class="btn">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="event-card fade-in filter-item search-item" data-category="festivals">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800" alt="EDM Festival">
+                    <div class="event-card-content">
+                        <h3>EDM Electric Festival</h3>
+                        <div class="meta">
+                            <span>📅 September 10, 2025</span>
+                            <span>📍 Miami, FL</span>
+                        </div>
+                        <div class="price">$99</div>
+                        <a href="event.html" class="btn">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="event-card fade-in filter-item search-item" data-category="concerts">
+                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800" alt="Pop Concert">
+                    <div class="event-card-content">
+                        <h3>Pop Stars Live</h3>
+                        <div class="meta">
+                            <span>📅 June 25, 2025</span>
+                            <span>📍 Boston, MA</span>
+                        </div>
+                        <div class="price">$75</div>
+                        <a href="event.html" class="btn">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="event-card fade-in filter-item search-item" data-category="festivals">
+                    <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800" alt="Coastal Music Fest">
+                    <div class="event-card-content">
+                        <h3>Coastal Music Fest</h3>
+                        <div class="meta">
+                            <span>📅 July 4, 2025</span>
+                            <span>📍 San Diego, CA</span>
+                        </div>
+                        <div class="price">$95</div>
+                        <a href="event.html" class="btn">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="event-card fade-in filter-item search-item" data-category="theatre">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800" alt="Broadway Show">
+                    <div class="event-card-content">
+                        <h3>Broadway Spectacular</h3>
+                        <div class="meta">
+                            <span>📅 July 15, 2025</span>
+                            <span>📍 New York, NY</span>
+                        </div>
+                        <div class="price">$110</div>
+                        <a href="event.html" class="btn">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="event-card fade-in filter-item search-item" data-category="concerts">
+                    <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=800" alt="Classical Concert">
+                    <div class="event-card-content">
+                        <h3>Classical Symphony</h3>
+                        <div class="meta">
+                            <span>📅 August 1, 2025</span>
+                            <span>📍 Philadelphia, PA</span>
+                        </div>
+                        <div class="price">$85</div>
+                        <a href="event.html" class="btn">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="event-card fade-in filter-item search-item" data-category="festivals">
+                    <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800" alt="Hip Hop Festival">
+                    <div class="event-card-content">
+                        <h3>Hip Hop Celebration</h3>
+                        <div class="meta">
+                            <span>📅 August 20, 2025</span>
+                            <span>📍 Atlanta, GA</span>
+                        </div>
+                        <div class="price">$80</div>
+                        <a href="event.html" class="btn">Buy Ticket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SoundWave</h3>
+                <p>Your ultimate destination for event tickets.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+                    <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe for updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EventX. All rights reserved. | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a></p>
+        </div>
+    </footer>
+
+    <button class="btn-back-top" aria-label="Back to top">↑</button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>
+
